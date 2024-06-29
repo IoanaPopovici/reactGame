@@ -65,7 +65,7 @@ const App = () => {
 };
 
 const ScoreBoard = ({ playerScore, computerScore, playerChoice, computerChoice, result }) => (
-  <>
+  <div>
   <div className='title'>
     <h1>Climinte Ioana-Gabriela</h1>
     <h3>Universitatea "Danubius" Galati</h3>
@@ -99,7 +99,7 @@ const ScoreBoard = ({ playerScore, computerScore, playerChoice, computerChoice, 
       </div>
     </div>
   </section>
-  </>
+  </div>
 );
 
 const GameButtons = ({ onPlayerChoice }) => (
