@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
+
 const App = () => {
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
@@ -65,14 +65,15 @@ const App = () => {
 };
 
 const ScoreBoard = ({ playerScore, computerScore, playerChoice, computerChoice, result }) => (
-  <div>
-  <div className='title'>
-    <h1>Climinte Ioana-Gabriela</h1>
-    <h3>Universitatea "Danubius" Galati</h3>
-    <h3>Informatica, an II</h3>
-    <h3>Aplicatie realizata in cadrul practicii realizate la Britannia Global Markets Limited</h3>
-  </div>
+
+  
   <section className="bg-primary">
+      <div className='title'>
+        <h1>Climinte Ioana-Gabriela</h1>
+        <h3>Universitatea "Danubius" Galati</h3>
+        <h3>Informatica, an II</h3>
+        <h3>Aplicatie realizata in cadrul practicii realizate la Britannia Global Markets Limited</h3>
+      </div>
     <div className="container">
       <div className="row align-items-start p-5">
         <div className="col">
@@ -99,7 +100,6 @@ const ScoreBoard = ({ playerScore, computerScore, playerChoice, computerChoice, 
       </div>
     </div>
   </section>
-  </div>
 );
 
 const GameButtons = ({ onPlayerChoice }) => (
